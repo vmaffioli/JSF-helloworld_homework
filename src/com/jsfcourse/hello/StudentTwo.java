@@ -1,5 +1,8 @@
 package com.jsfcourse.hello;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
@@ -8,10 +11,27 @@ public class StudentTwo {
 	private String firstName;
 	private String lastName;
 	private String country;
+	List<String> countryOptions;
 	
 	public StudentTwo() {
+		countryOptions = new ArrayList<>();
+		
+		countryOptions.add("Brazil");
+		countryOptions.add("India");
+		countryOptions.add("United States");
+		countryOptions.add("Canada");
+		countryOptions.add("Japan");
+
 		
 	}
+
+	
+	
+	public List<String> getCountryOptions() {
+		return countryOptions;
+	}
+
+
 
 	public String getFirstName() {
 		return firstName;
