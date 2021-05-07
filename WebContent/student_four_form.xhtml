@@ -4,33 +4,34 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
-	<title>Student Three Registration Form</title>
+	<title>Student Four Registration Form</title>
 </h:head>
 
 <h:body>
 	<h:form>
    		
    		First name: <h:inputText id="firstName"
-			value="#{studentThree.language}" />
-
+			value="#{studentFour.firstName}" />
 		<br />
 		<br />
    		
    		Last name: <h:inputText id="lastName"
-			value="#{studentThree.language}" />
+			value="#{studentFour.lastName}" />
 
 		<br />
 		<br />
+
+		Favorite languages:
+		<h:selectManyCheckbox value="#{studentFour.languages}">
 		
-		Favorite Languages:
-		<h:selectOneRadio value="#{studentThree.language}">
 			<f:selectItem itemValue="Javascript" itemLabel="Javascript"/>
 			<f:selectItem itemValue="Java" itemLabel="Java" />
 			<f:selectItem itemValue="Python" itemLabel="Python" />
 			<f:selectItem itemValue="C++" itemLabel="C++" />
-		</h:selectOneRadio>
+			
+		</h:selectManyCheckbox>
 
-		<h:commandButton value="Submit" action="student_three_response" />
+		<h:commandButton value="Submit" action="student_four_response" />
 	</h:form>
 </h:body>
 
