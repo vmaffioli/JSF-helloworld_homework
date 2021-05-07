@@ -3,42 +3,40 @@ package com.jsfcourse.hello;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class Student {
-	
+public class StudentFive {
+
 	private String firstName;
 	private String lastName;
-	
-	
-	// create no-arg constructor
-	public Student() {
-		
-	}
+	private String language;
 
+	public StudentFive() {
+		firstName = "Mary";
+		lastName = "Public";
+		language = "Java";
+	}
 
 	public String getFirstName() {
 		return firstName;
 	}
 
-
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
 
 	public String getLastName() {
 		return lastName;
 	}
 
-
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
-	
-	// define getters and setters
 
-	
-	
-	
+	public String getlanguage() {
+		return language;
+	}
+
+	public void setlanguage(String language) {
+		this.language = language;
+	}
+
 }
